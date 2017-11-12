@@ -1,0 +1,7 @@
+---
+- name: Install Cask packages
+  homebrew_cask:
+    name: "{{ item.name | default(item) }}"
+    state: "{{ item.state | default('present') }}"
+    update_homebrew: yes
+  with_items: "{{ cask_packages }}"

@@ -1,0 +1,14 @@
+---
+- hosts: localhost
+  connection: local
+  roles:
+    - role: terminal
+      tags: ['terminal']
+    - role: productivity
+      tags: ['productivity']
+    - role: other
+      tags: ['other']
+    - role: web
+      tags: ['web']
+    - role: development
+      tags: ['development']

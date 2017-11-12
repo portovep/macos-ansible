@@ -1,0 +1,4 @@
+---
+web_cask_packages:
+  - google-chrome
+  - firefox

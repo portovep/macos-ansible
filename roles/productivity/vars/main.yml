@@ -1,0 +1,5 @@
+cask_packages:
+  - spectacle
+  - 1clipboard
+  - pomotodo
+  - evernote

@@ -1,0 +1,10 @@
+---
+homebrew_packages:
+  - git
+  - node
+  - yarn
+
+cask_packages:
+  - virtualbox
+  - vagrant
+  - visual-studio-code

@@ -1,0 +1,7 @@
+---
+homebrew_packages:
+  - zsh
+  - autojump
+
+cask_packages:
+  - iterm2

@@ -1,0 +1,7 @@
+cask_packages:
+  - appcleaner
+  - vlc
+  - flux
+  - evernote
+  - zoomus
+  - steam
