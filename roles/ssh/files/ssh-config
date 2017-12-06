@@ -1,0 +1,4 @@
+Host github.com
+    IdentityFile ~/.ssh/portovep
+Host bitbucket.org
+    IdentityFile ~/.ssh/portovep

@@ -1,0 +1,10 @@
+- name: Copying .macos to /tmp
+  copy:
+    src: .macos
+    dest: /tmp
+    mode: 0744
+
+- name: Run .macos
+  shell: /tmp/.macos
+  changed_when: false
+  become: true

@@ -12,3 +12,15 @@
     state: "{{ item.state | default('present') }}"
     update_homebrew: yes
   with_items: "{{ cask_packages }}"
+
+- name: Copying Visual Studio Code settings to user's home
+  copy:
+    src: vscode-settings.json
+    dest: ~/Library/Application Support/Code/User/settings.json
+    mode: 0644
+
+- name: Copying .gitconfig to user's home
+  copy:
+    src: .gitconfig
+    dest: ~/.gitconfig
+    mode: 0644

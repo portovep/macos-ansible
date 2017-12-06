@@ -2,6 +2,12 @@
 homebrew_packages:
   - zsh
   - autojump
+  # - mas 
+  # disabled until bug signing in in High Sierra is fixed
+  # https://github.com/mas-cli/mas/issues/107
 
 cask_packages:
-  - iterm2
+  # - iterm2
+  - hyper
+
+zsh_shell_path: /usr/local/bin/zsh

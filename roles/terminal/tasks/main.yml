@@ -12,3 +12,29 @@
     state: "{{ item.state | default('present') }}"
     update_homebrew: yes
   with_items: "{{ cask_packages }}"
+
+- name: Add Zsh shell installed with brew to /etc/shells
+  lineinfile:
+    path: /etc/shells
+    line: "{{ zsh_shell_path }}"
+  become: true
+
+- name: Set Zsh as default terminal
+  shell: chsh -s $(which zsh)
+
+- name: Install oh-my-zsh
+  shell: sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  args:
+    creates: ~/.oh-my-zsh
+
+- name: Copying .zshrc to user's home
+  copy:
+    src: .zshrc
+    dest: ~/.zshrc
+    mode: 0644
+
+- name: Copying .hyper.js to user's home
+  copy:
+    src: .hyper.js
+    dest: ~/.hyper.js
+    mode: 0644

@@ -1,7 +1,11 @@
 ---
 - hosts: localhost
   connection: local
+  gather_facts: no
+  
   roles:
+    - role: ssh
+      tags: ['ssh']
     - role: terminal
       tags: ['terminal']
     - role: productivity
@@ -12,3 +16,5 @@
       tags: ['web']
     - role: development
       tags: ['development']
+    - role: macos
+      tags: ['macos']

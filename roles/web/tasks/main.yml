@@ -1,5 +1,5 @@
 ---
-- name: Installing Homebrew cask packages
+- name: Install Cask packages
   homebrew_cask:
     name: "{{ item.name | default(item) }}"
     state: "{{ item.state | default('present') }}"

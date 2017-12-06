@@ -1,0 +1,6 @@
+
+#!/usr/bin/env bash
+
+# turn on firewall
+# allowing incoming connections for built-in and signed apps
+defaults write /Library/Preferences/com.apple.alf globalstate -int 1

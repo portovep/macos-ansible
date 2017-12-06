@@ -1,7 +1,11 @@
 cask_packages:
-  - appcleaner
+  # - appcleaner
   - vlc
   - flux
   - evernote
   - zoomus
-  - steam
+  # - slack
+  # - steam
+  - spotify
+  - dropbox
+  # - skype
