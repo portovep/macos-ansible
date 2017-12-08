@@ -4,42 +4,46 @@ My macOS setup automated by Ansible
 
 ## Getting started
 
-Install Ansible using pip
+Run the bootstrap script to install Ansible and Brew
 
 ```sh
-$ pip install ansible
+$ ./bootstrap.sh
 ```
 
-Run the playbooks
+Run the playbook
 
 ```sh
-$ ansible-playbook site.yml -i inventory
+$ ansible-playbook site.yml -i inventory -K
 ```
 
-## Manual steps
-Virtualbox requires sudo privileges
-zoomus requires sudo privileges
-Allow extensions from Oracle to install Virtualbox
+To just run a specific role (e.g. development)
 
-## Packages that needs manual installation:
-* 1Password (AppStore)
-* Pocket
-* Clipmenu
+```sh
+$ ansible-playbook site.yml -i inventory -K -t development
+```
 
 ## TODO
 * Disable Notifications & Dashboard
 * Sharing -> Change computer name
 * https://stackoverflow.com/a/4490124
-* Mouse spped
+* Mouse speed
 * Set Google DNSs
-* Remove Select PDL from panel?
 
-# App customization
-* 1Clipboard
-- Change shortcut to cmd + shift + v
+## Manual steps
+* Virtualbox requires sudo privileges
+* Allow extensions from Oracle to install Virtualbox
+* zoomus requires sudo privileges
+
+### Apps that require manual installation
+* 1Password (AppStore)
+* Pocket (AppStore)
+* Clipmenu
+
+### Manual App customization
+* 1Clipboard: Change shortcut to cmd + shift + v
 
 
-# OS customization
+### Manual OS customization
 * Automatically hide/show menu bar
 * Show bluetooth in Menu bar
 * Show battery percentage
