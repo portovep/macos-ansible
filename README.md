@@ -27,30 +27,30 @@ Allow extensions from Oracle to install Virtualbox
 * Clipmenu
 
 ## TODO
+* Disable Notifications & Dashboard
+* Sharing -> Change computer name
 * https://stackoverflow.com/a/4490124
-* Fullscreen shortcut for Spectacle
-* Copy public and private SSH keys to ~/.ssh and make sure they're set to 600
 * Mouse spped
-* Add oh-my-zsh and plugins config
-* Create visual studio config
-* Install sophos
 * Set Google DNSs
 * Remove Select PDL from panel?
 
+# App customization
+* 1Clipboard
+- Change shortcut to cmd + shift + v
+
+
 # OS customization
-* Remove apps from dock
-* Autohide dock
-* Disable allow handoff between mac and icloud services
-* Customize Spotlight serach results
-* Disable dictation shortcut (Keyboard -> dictation shortcut)
-* Enable file encryption with FileVault
 * Automatically hide/show menu bar
-* Enable macOS system data files and security updates
-* Sharing -> Change computer name
-* Disable everything in "Siri suggestions & privacy"
-* Require password inmediatly after sleep/screen-saver
-* Configure privacy settings macOS
 * Show bluetooth in Menu bar
 * Show battery percentage
 * Clock show date
 * Adjust key repeat and delay till repeat in keyboard settings
+* Disable dictation shortcut (Keyboard -> dictation shortcut)
+* Enable file encryption with FileVault
+* Customize Spotlight search results
+* Enable macOS system data files and security updates
+* Disable everything in "Siri suggestions & privacy"
+* Disable allow handoff between mac and icloud services (General preferences)
+* Require password inmediatly after sleep/screen-saver
+* Configure Sophos antivirus
+* Configure privacy settings macOS (security & privacy preferences)

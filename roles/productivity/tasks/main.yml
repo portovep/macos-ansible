@@ -5,3 +5,9 @@
     state: "{{ item.state | default('present') }}"
     update_homebrew: yes
   with_items: "{{ cask_packages }}"
+
+- name: Setting custom Spectable shortcuts
+  copy:
+    src: spectacle-shortcuts.json
+    dest: ~/Library/Application Support/Spectacle/Shortcuts.json
+    mode: 0644
