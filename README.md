@@ -24,7 +24,6 @@ $ ansible-playbook site.yml -i inventory -K -t development
 
 ## TODO
 * Disable Notifications & Dashboard
-* Sharing -> Change computer name
 * https://stackoverflow.com/a/4490124
 * Mouse speed
 * Set Google DNSs

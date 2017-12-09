@@ -1,3 +1,37 @@
+
+- name: Checking current ComputerName
+  shell: scutil --get ComputerName
+  register: current_computer_name
+  ignore_errors: yes
+  changed_when: false  
+
+- name: Setting ComputerName
+  shell: scutil --set ComputerName "{{ hostname }}"
+  become: true
+  changed_when: current_computer_name.stdout != hostname
+
+- name: Checking current LocalHostName
+  shell: scutil --get LocalHostName
+  register: current_local_hostname
+  ignore_errors: yes
+  changed_when: false
+
+- name: Setting LocalHostName
+  shell: scutil --set LocalHostName "{{ hostname }}"
+  become: true
+  changed_when: current_local_hostname.stdout != hostname
+
+- name: Checking current HostName
+  shell: scutil --get HostName
+  register: current_hostname
+  ignore_errors: yes
+  changed_when: false  
+
+- name: Setting HostName
+  shell: scutil --set HostName "{{ hostname }}"
+  become: true
+  changed_when: current_hostname.stdout != hostname 
+
 - name: Copying .macos to /tmp
   copy:
     src: .macos
