@@ -3,8 +3,13 @@ homebrew_packages:
   - git
   - node
   - yarn
+  - clojure
 
 cask_packages:
+  - java
   - virtualbox
   - vagrant
   - visual-studio-code
+
+npm_packages:
+  - firebase-cli
