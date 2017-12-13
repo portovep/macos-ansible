@@ -12,4 +12,4 @@ cask_packages:
   - visual-studio-code
 
 npm_packages:
-  - firebase-cli
+  - firebase-tools
