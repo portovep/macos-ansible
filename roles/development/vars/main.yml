@@ -3,7 +3,9 @@ homebrew_packages:
   - git
   - node
   - yarn
+  - watchman
   - clojure
+  - leiningen
 
 cask_packages:
   - java
