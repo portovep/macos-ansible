@@ -16,11 +16,54 @@ Run the playbook
 $ ansible-playbook site.yml -i inventory -K
 ```
 
-To just run a specific role (e.g. development)
+## Tags available
+
+To just run a specific tag (e.g. development)
 
 ```sh
 $ ansible-playbook site.yml -i inventory -K -t development
 ```
+
+### development
+* git
+* node
+* yarn
+* watchman
+* clojure
+* leiningen
+* java
+* virtualbox
+* vagrant
+* visual-studio-code
+* firebase-tools
+
+### other
+* vlc
+* flux
+* evernote
+* zoomus
+* spotify
+* dropbox
+
+### productivity
+* spectacle
+* 1clipboard
+
+### terminal
+* zsh
+* autojump
+* hyper
+
+### ssh
+* sshconfig
+
+### macos
+* sets hostname
+* .macos config
+
+### web
+* google-chrome
+* firefox
 
 ## TODO
 * Disable Notifications & Dashboard
