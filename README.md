@@ -16,7 +16,7 @@ Run the playbook
 $ ansible-playbook site.yml -i inventory -K
 ```
 
-## Set your custom hostname
+### Set your custom hostname
 
 Set the value of the *hostname* variable to your hostname and then rename *custom_vars.example.yml*
 
@@ -24,7 +24,7 @@ Set the value of the *hostname* variable to your hostname and then rename *custo
 $ mv custom_vars.example.yml custom_vars.yml
 ```
 
-## SSH keys configuration
+### Set your own SSH keys
 
 Copy your ssh keys to roles/ssh/files
 
@@ -47,6 +47,12 @@ To just run a specific tag (e.g. development)
 
 ```sh
 $ ansible-playbook site.yml -i inventory -K -t development
+```
+or multiple tags
+
+
+```sh
+$ ansible-playbook site.yml -i inventory -K --tags "development,ssh"
 ```
 
 ### development
@@ -121,6 +127,6 @@ $ ansible-playbook site.yml -i inventory -K -t development
 * Configure privacy settings macOS (security & privacy preferences)
 
 ## TODO
-* Automate remaining manual os customization tasks
-* Automate remaining manual app customization tasks
-* Automate App Store apps installation with mas
+- [ ] Automate remaining manual os customization tasks
+- [ ] Automate remaining manual app customization tasks
+- [ ] Automate App Store apps installation with mas
