@@ -1,6 +1,6 @@
 # macOS-ansible
 
-My macOS setup automated by Ansible
+My macOS setup automated with Ansible
 
 ## Getting started
 

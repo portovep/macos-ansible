@@ -7,14 +7,14 @@
 
 - name: Copying password protected private ssh key
   copy:
-    src: portovep
-    dest: ~/.ssh/portovep
+    src: "{{ private_ssh_key_name }}"
+    dest: ~/.ssh/{{ private_ssh_key_name }}
     mode: 0600
 
 - name: Copying public ssh key
   copy:
-    src: portovep.pub
-    dest: ~/.ssh/portovep.pub
+    src: "{{ public_ssh_key_name }}"
+    dest: ~/.ssh/{{ public_ssh_key_name }}
     mode: 0644
 
 - name: Copying ssh config
