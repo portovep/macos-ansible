@@ -1,2 +1,4 @@
 # Ansible's retry files
 /*.retry
+
+/custom_vars.yml

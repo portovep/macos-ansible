@@ -2,6 +2,8 @@
 - hosts: localhost
   connection: local
   gather_facts: no
+  vars_files:
+    - custom_vars.yml
   
   roles:
     - role: ssh

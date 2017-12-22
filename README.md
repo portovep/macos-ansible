@@ -16,6 +16,31 @@ Run the playbook
 $ ansible-playbook site.yml -i inventory -K
 ```
 
+## Set your custom hostname
+
+Set the value of the *hostname* variable to your hostname and then rename *custom_vars.example.yml*
+
+```sh
+$ mv custom_vars.example.yml custom_vars.yml
+```
+
+## SSH keys configuration
+
+Copy your ssh keys to roles/ssh/files
+
+```sh
+$ cp private-ssh-key roles/ssh/files/
+$ cp public-ssh-key roles/ssh/files/
+```
+
+Set the value of *private_ssh_key_name* and *public_ssh_key_name* variables to the names of your private and public key in custom_vars.example.yml
+
+Rename *custom_vars.example.yml*
+
+```sh
+$ mv custom_vars.example.yml custom_vars.yml
+```
+
 ## Tags available
 
 To just run a specific tag (e.g. development)
@@ -56,6 +81,7 @@ $ ansible-playbook site.yml -i inventory -K -t development
 
 ### ssh
 * sshconfig
+* ssh keys
 
 ### macos
 * sets hostname
@@ -65,25 +91,18 @@ $ ansible-playbook site.yml -i inventory -K -t development
 * google-chrome
 * firefox
 
-## TODO
-* Disable Notifications & Dashboard
-* https://stackoverflow.com/a/4490124
-* Mouse speed
-* Set Google DNSs
-
 ## Manual steps
-* Virtualbox requires sudo privileges
+* Virtualbox installation requires sudo password
+* zoomus installation requires sudo password
 * Allow extensions from Oracle to install Virtualbox
-* zoomus requires sudo privileges
 
-### Apps that require manual installation
+### Manual App installation
 * 1Password (AppStore)
 * Pocket (AppStore)
-* Clipmenu
+* Clipmenu (Web)
 
 ### Manual App customization
 * 1Clipboard: Change shortcut to cmd + shift + v
-
 
 ### Manual OS customization
 * Automatically hide/show menu bar
@@ -100,3 +119,8 @@ $ ansible-playbook site.yml -i inventory -K -t development
 * Require password inmediatly after sleep/screen-saver
 * Configure Sophos antivirus
 * Configure privacy settings macOS (security & privacy preferences)
+
+## TODO
+* Automate remaining manual os customization tasks
+* Automate remaining manual app customization tasks
+* Automate App Store apps installation with mas

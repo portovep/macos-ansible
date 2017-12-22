@@ -1,0 +1,5 @@
+---
+hostname: your-hostname
+
+private_ssh_key_name: your-private-ssh-key-name
+public_ssh_key_name: your-public-ssh-key-name
