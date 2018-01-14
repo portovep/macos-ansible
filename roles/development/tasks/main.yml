@@ -34,10 +34,11 @@
     dest: ~/Library/Application Support/Code/User/settings.json
     mode: 0644
 
-- name: Installing IntelliJ Key Bindings extension for VS Code
-  shell: code --install-extension k--kato.intellij-idea-keybindings
-  register: intellij_keybindings_result
-  changed_when: "not intellij_keybindings_result.stdout|search('is already installed.')"
+- name: Installing VS Code extensions
+  shell: "code --install-extension {{ item }}"
+  register: extension_result
+  changed_when: "not extension_result.stdout|search('is already installed.')"
+  with_items: "{{ vscode_extensions }}"
 
 - name: Copying .gitconfig to user's home
   copy:
