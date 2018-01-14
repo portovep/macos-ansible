@@ -19,4 +19,4 @@ npm_packages:
 vscode_extensions:
   - k--kato.intellij-idea-keybindings
   - bierner.markdown-preview-github-styles
-  - passionkind.prettier-vscode-with-tabs
+  - esbenp.prettier-vscode
