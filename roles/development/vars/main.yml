@@ -14,6 +14,7 @@ cask_packages:
   - visual-studio-code
 
 npm_packages:
+  - fastly-cli
   - firebase-tools
 
 vscode_extensions:
