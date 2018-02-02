@@ -6,12 +6,14 @@ homebrew_packages:
   - watchman
   - clojure
   - leiningen
+  - gradle
 
 cask_packages:
   - java
   - virtualbox
   - vagrant
   - visual-studio-code
+  - intellij-idea-ce
 
 npm_packages:
   - fastly-cli
