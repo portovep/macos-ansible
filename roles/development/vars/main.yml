@@ -1,4 +1,7 @@
 ---
+homebrew_taps:
+  - ethereum/ethereum
+
 homebrew_packages:
   - git
   - node
@@ -7,6 +10,7 @@ homebrew_packages:
   - clojure
   - leiningen
   - gradle
+  - ethereum
 
 cask_packages:
   - java
