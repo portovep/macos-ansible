@@ -22,6 +22,7 @@ cask_packages:
 npm_packages:
   - fastly-cli
   - firebase-tools
+  - create-react-native-app
 
 vscode_extensions:
   - k--kato.intellij-idea-keybindings
