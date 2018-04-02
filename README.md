@@ -106,6 +106,7 @@ $ ansible-playbook site.yml -i inventory -K --tags "development,ssh"
 * 1Password (AppStore)
 * Pocket (AppStore)
 * Clipmenu (Web)
+* Docker for Mac (Web)
 
 ### Manual App customization
 * 1Clipboard: Change shortcut to cmd + shift + v
