@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/$(whoami)/.oh-my-zsh
@@ -7,7 +8,7 @@ export ZSH=/Users/$(whoami)/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="gallois"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -61,6 +62,7 @@ ZSH_THEME="robbyrussell"
 plugins=(
   git
   autojump
+  vagrant
 )
 
 source $ZSH/oh-my-zsh.sh
