@@ -2,4 +2,7 @@
 cask_packages:
   - spectacle
   - 1clipboard
+  - slack
+  - caffeine
+  - appcleaner
   # - pomotodo
