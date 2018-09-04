@@ -29,3 +29,7 @@ chflags nohidden ~/Library
 
 # Automatically disable menu bar
 defaults write NSGlobalDomain _HIHideMenuBar -bool true
+
+# Make keyboard interaction faster
+defaults write -g KeyRepeat -int 1
+defaults write -g InitialKeyRepeat -int 10
