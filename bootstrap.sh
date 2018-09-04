@@ -10,6 +10,9 @@ sudo -v
 log "Installing pip using easy_install"
 sudo easy_install pip
 
+log "Upgrading pip"
+sudo pip install --upgrade pip
+
 log "Installing Ansible using pip"
 sudo pip install ansible
 
