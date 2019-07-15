@@ -1,28 +1,50 @@
 ---
 homebrew_taps:
-  - ethereum/ethereum
+  - loadimpact/k6
 
 homebrew_packages:
   - git
   - node
+  - nvm
   - yarn
   - watchman
+  - ruby
   - clojure
   - leiningen
   - gradle
-  - ethereum
+  - kubectl
+  - kompose
+  - terraform
+  - awscli
+  - awsebcli
+  - pipenv
+  - circleci
+  - flyway
+  - ktlint
+  - k6
 
 cask_packages:
-  - java
+  - java8
   - virtualbox
   - vagrant
   - visual-studio-code
   - intellij-idea-ce
+  - minikube
+  - sketch
+  - postman
 
 npm_packages:
   - fastly-cli
   - firebase-tools
   - create-react-native-app
+  - create-react-app
+  - "@storybook/cli"
+
+pip_packages:
+  - name: invoke
+    version: 0.14
+  - aws-role-credentials 
+  - oktaauth
 
 vscode_extensions:
   - k--kato.intellij-idea-keybindings

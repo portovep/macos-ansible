@@ -65,6 +65,11 @@ plugins=(
   vagrant
 )
 
+# NVM setup
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
+
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
