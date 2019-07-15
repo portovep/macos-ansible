@@ -8,10 +8,6 @@ defaults write /Library/Preferences/com.apple.alf globalstate -int 1
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
 
-# Set a blazingly fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 1
-defaults write NSGlobalDomain InitialKeyRepeat -int 10
-
 # Wipe all (default) app icons from the Dock
 # This is only really useful when setting up a new Mac, or if you don’t use
 # the Dock to launch apps.
@@ -31,5 +27,5 @@ chflags nohidden ~/Library
 defaults write NSGlobalDomain _HIHideMenuBar -bool true
 
 # Make keyboard interaction faster
-defaults write -g KeyRepeat -int 1
-defaults write -g InitialKeyRepeat -int 10
+defaults write -g KeyRepeat -int 2
+defaults write -g InitialKeyRepeat -int 15
