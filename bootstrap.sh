@@ -24,3 +24,5 @@ TRAVIS=true /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Hom
 
 log "Adding cask as Homebrew tap"
 brew tap caskroom/cask
+
+log "Congratulations! The bootstrap has been completed successfully"

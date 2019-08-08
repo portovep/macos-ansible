@@ -10,19 +10,16 @@ Run the bootstrap script to install Ansible and Brew
 $ ./bootstrap.sh
 ```
 
-Run the playbook
-
-```sh
-$ ansible-playbook site.yml -i inventory -K
-```
-
-### Set your custom hostname
-
-Set the value of the *hostname* variable to your hostname and then rename *custom_vars.example.yml*
+### Custom configuration
+Rename *custom_vars.example.yml* to be able to set your own configuration
 
 ```sh
 $ mv custom_vars.example.yml custom_vars.yml
 ```
+
+### Set your custom hostname
+
+Set the value of the *hostname* variable to your hostname in custom_vars.yml
 
 ### Set your own SSH keys
 
@@ -35,10 +32,10 @@ $ cp public-ssh-key roles/ssh/files/
 
 Set the value of *private_ssh_key_name* and *public_ssh_key_name* variables to the names of your private and public key in custom_vars.example.yml
 
-Rename *custom_vars.example.yml*
+### Run the playbook
 
 ```sh
-$ mv custom_vars.example.yml custom_vars.yml
+$ ansible-playbook site.yml -i inventory -K
 ```
 
 ## Tags available
